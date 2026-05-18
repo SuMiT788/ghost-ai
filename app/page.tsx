@@ -1,5 +1,5 @@
-import { DesignSystemShowcase } from "@/components/design-system-showcase";
+import { EditorShell } from "@/components/editor/editor-shell";
 
 export default function Home() {
-  return <DesignSystemShowcase />;
+  return <EditorShell />;
 }
