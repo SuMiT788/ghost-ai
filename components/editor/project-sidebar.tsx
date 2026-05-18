@@ -44,10 +44,11 @@ export function ProjectSidebar({
   return (
     <aside
       aria-hidden={!isOpen}
+      inert={!isOpen}
       className={cn(
         "pointer-events-none absolute top-4 bottom-4 left-4 z-20 w-[min(24rem,calc(100%-2rem))] transition-transform duration-300 ease-out sm:top-6 sm:bottom-6 sm:left-6 sm:w-96",
         isOpen ? "translate-x-0" : "-translate-x-[calc(100%+1.5rem)]",
-        className
+        className,
       )}
     >
       <div className="pointer-events-auto flex h-full flex-col rounded-3xl border border-surface-border bg-surface/88 p-4 shadow-[0_24px_90px_color-mix(in_srgb,var(--bg-base)_70%,transparent)] backdrop-blur-xl">
